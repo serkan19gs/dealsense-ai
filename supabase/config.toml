@@ -1,0 +1,23 @@
+project_id = "dealsense-ai"
+
+[api]
+enabled = true
+port = 54321
+
+[db]
+port = 54322
+
+[functions.analyze-deal]
+verify_jwt = true
+
+[functions.generate-listing]
+verify_jwt = true
+
+[functions.score-lead]
+verify_jwt = true
+
+[functions.create-checkout-session]
+verify_jwt = true
+
+[functions.stripe-webhook]
+verify_jwt = false
